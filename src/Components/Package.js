@@ -1,103 +1,37 @@
-import React from "react";
+import {
+  faAngleDown,
+  faAngleUp,
+  faCheck,
+  faCircleQuestion,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
 
 const Package = () => {
+  const [isActive, setActive] = useState(false);
+  const [isActive2, setActive2] = useState(false);
+  const [isActive3, setActive3] = useState(false);
+  const [isActive4, setActive4] = useState(false);
+
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
+  const toggleClass2 = () => {
+    setActive2(!isActive2);
+  };
+  const toggleClass3 = () => {
+    setActive3(!isActive3);
+  };
+  const toggleClass4 = () => {
+    setActive4(!isActive4);
+  };
   return (
-    //         <div class="container flex flex-wrap pt-4 pb-10 m-auto mt-6 md:mt-15 lg:px-12 xl:px-16">
-    //     <div class="w-full px-0 lg:px-4">
-    //       <h2 class="px-12 text-base font-bold text-center md:text-2xl text-blue-700">
-    //         Choose your plan
-    //       </h2>
-    //       <p class="py-1 text-sm text-center text-blue-700 mb-10">
-    //         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-    //       </p>
-    //       <div class="flex flex-wrap items-center justify-center py-4 pt-0">
-    //         <div class="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
-    //           <label class="flex flex-col rounded-lg shadow-lg group relative cursor-pointer hover:shadow-2xl">
-    //             <div class="w-full px-4 py-6 rounded-t-lg card-section-1">
-    //               <h3 class="mx-auto text-base font-semibold text-center underline text-blue-500 group-hover:text-white">
-    //                 Standard
-    //               </h3>
-    //               <p class="text-5xl font-bold text-center group-hover:text-white text-blue-500">
-    //                 $25.<span class="text-3xl">95</span>
-    //               </p>
-    //               <p class="text-xs text-center uppercase group-hover:text-white text-blue-500">
-    //                 monthly
-    //               </p>
-    //             </div>
-    //             <div
-    //               class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500"
-    //             >
-    //               <p class="text-xl text-white">
-    //                 1 month
-    //               </p>
-    //               <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
-    //                 Get Started
-    //               </button>
-    //             </div>
-    //           </label>
-    //         </div>
-
-    //         <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-    //           <label class="flex flex-col rounded-lg shadow-lg relative cursor-pointer hover:shadow-2xl">
-    //             <div class="w-full px-4 py-8 rounded-t-lg bg-blue-500">
-    //               <h3 class="mx-auto text-base font-semibold text-center underline text-white group-hover:text-white">
-    //                 Premium
-    //               </h3>
-    //               <p class="text-5xl font-bold text-center text-white">
-    //                 $21.<span class="text-3xl">95</span>
-    //               </p>
-    //               <p class="text-xs text-center uppercase text-white">
-    //                 monthly
-    //               </p>
-    //             </div>
-    //             <div
-    //               class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-700"
-    //             >
-    //               <p class="text-xl text-white">
-    //                 3 months
-    //               </p>
-    //               <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
-    //                 Save 15%
-    //               </button>
-    //             </div>
-    //           </label>
-    //         </div>
-
-    //         <div class="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
-    //           <label class="flex flex-col rounded-lg shadow-lg group card-group relative hover:bg-jblue-secondary cursor-pointer hover:shadow-2xl">
-    //             <div class="w-full px-4 py-6 rounded-t-lg card-section-1">
-    //               <h3 class="mx-auto text-base font-semibold text-center underline text-blue-500 group-hover:text-white">
-    //                 Elite
-    //               </h3>
-    //               <p class="text-5xl font-bold text-center group-hover:text-white text-blue-500">
-    //                 $19.<span class="text-3xl">45</span>
-    //               </p>
-    //               <p class="text-xs text-center uppercase group-hover:text-white text-blue-500">
-    //                 monthly
-    //               </p>
-    //             </div>
-    //             <div
-    //               class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500"
-    //             >
-    //               <p class="text-xl text-white">
-    //                 6 months
-    //               </p>
-    //               <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white border border-transparent rounded text-blue-500">
-    //                 Save 25%
-    //               </button>
-    //             </div>
-    //           </label>
-    //         </div>
-
-    //       </div>
-    //     </div>
-    //   </div>
-
     <section
       class="
    px-12
    bg-white
-   pt-20
+   pt-10
    lg:pt-[120px]
    pb-12
    lg:pb-[90px]
@@ -171,47 +105,427 @@ const Package = () => {
                 billed yearly
               </p>
 
-              <div class="overflow-x-auto">
+              <div class="overflow-x-auto mb-1">
                 <table class="table w-full">
-                  <thead>
+                  <thead className="opacity-75">
                     <tr>
-                      <th>General</th>
-                      <th>Yes</th>
-                      <th>Yes</th>
+                      <th>
+                        {!isActive ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        General
+                        <abbr title="This is general option">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
                       <th>Yes</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className={isActive ? "" : "hidden"}>
                     <tr>
                       <td className="text-xs">Number of sites</td>
-                      <td>X</td>
-                      <td>V</td>
-                      <td>V</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Media manager</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">3rd party integrations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Team members</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Powered by logo</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              {/* <div class="mb-7">
-                  <p class="text-base text-body-color leading-loose mb-1">
-                     1 User
-                  </p>
-                  <p class="text-base text-body-color leading-loose mb-1">
-                     All UI components
-                  </p>
-                  <p class="text-base text-body-color leading-loose mb-1">
-                     Lifetime access
-                  </p>
-                  <p class="text-base text-body-color leading-loose mb-1">
-                     Free updates
-                  </p>
-                  <p class="text-base text-body-color leading-loose mb-1">
-                     Use on 1 (one) project
-                  </p>
-                  <p class="text-base text-body-color leading-loose mb-1">
-                     3 Months support
-                  </p>
-               </div> */}
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive2 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass2}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass2}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Funnel Builder
+                        <abbr title="This is funnel builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive2 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of funnels</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of templatesgroups</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Split testing</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Mobile optimizer</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">In-built conversion tools</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Html download</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Save as template</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Clone page</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Unique visitors</td>
+                      <td>25,000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Transfer funnels</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive3 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass3}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass3}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Product Builder
+                        <abbr title="This is product builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive3 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of products</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Membership module products</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Digital products</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Instasuite checkpoint</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Multiple price point</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Coupons & discounts</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Automation actions</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Email
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Redirect URL
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Upload File
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-ISPDN
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Export orders to csv</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive4 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass4}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass4}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Membership Builder
+                        <abbr title="This is membership builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive4 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of members</td>
+                      <td>1000</td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Member tags</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Drip-feed</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Member progress tracking</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Quiz tracking</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Design editor</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <a
                 href="javascript:void(0)"
                 class="
