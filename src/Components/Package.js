@@ -1145,7 +1145,7 @@ const Package = () => {
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div className="w-48 rounded-full text-white text-center py-2 mx-auto my-[-8px] bg-primary">
+            <div className="w-48 rounded-full text-white text-center py-2 mx-auto my-[-5px] bg-primary">
               Best value
             </div>
             <div
