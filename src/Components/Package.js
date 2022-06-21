@@ -13,6 +13,10 @@ const Package = () => {
   const [isActive2, setActive2] = useState(false);
   const [isActive3, setActive3] = useState(false);
   const [isActive4, setActive4] = useState(false);
+  const [isActive5, setActive5] = useState(false);
+  const [isActive6, setActive6] = useState(false);
+  const [isActive7, setActive7] = useState(false);
+  const [isActive8, setActive8] = useState(false);
 
   const toggleClass = () => {
     setActive(!isActive);
@@ -25,6 +29,18 @@ const Package = () => {
   };
   const toggleClass4 = () => {
     setActive4(!isActive4);
+  };
+  const toggleClass5 = () => {
+    setActive5(!isActive5);
+  };
+  const toggleClass6 = () => {
+    setActive6(!isActive6);
+  };
+  const toggleClass7 = () => {
+    setActive7(!isActive7);
+  };
+  const toggleClass8 = () => {
+    setActive8(!isActive8);
   };
   return (
     <section
@@ -526,6 +542,323 @@ const Package = () => {
                 </table>
               </div>
 
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive5 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass5}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass5}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        List Builder
+                        <abbr title="This is list builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive5 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">SMTP setup</td>
+                      <td>own</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Blacklist domain, email, IP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Block role-based email</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of lists</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of subscribers</td>
+                      <td>1,000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Manual/Bulk import</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">List segmentation</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Automations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Optin forms</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Broadcasts</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Sequences</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Save email templates</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive6 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass6}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass6}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Blog Builder
+                        <abbr title="This is blog builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive6 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Widgets</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Menu</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Theme customizations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of posts</td>
+                      <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Post catagories</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive7 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass7}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass7}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Affiliate Center
+                        <abbr title="This is affiliate center">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>No</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive7 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Promotion tools</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Manage Commissions</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of affiliates</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Theme customization</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive8 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass8}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass8}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Support Desk
+                        <abbr title="This is support desk">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>No</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive8 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of staff</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of canned responses</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Knowledgebase</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <a
                 href="javascript:void(0)"
                 class="
@@ -851,6 +1184,774 @@ const Package = () => {
               >
                 billed yearly
               </p>
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        General
+                        <abbr title="This is general option">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Number of sites</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Media manager</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">3rd party integrations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Team members</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Powered by logo</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive2 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass2}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass2}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Funnel Builder
+                        <abbr title="This is funnel builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive2 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of funnels</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of templatesgroups</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Split testing</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Mobile optimizer</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">In-built conversion tools</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Html download</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Save as template</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Clone page</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Unique visitors</td>
+                      <td>100,000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Transfer funnels</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faXmark}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive3 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass3}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass3}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Product Builder
+                        <abbr title="This is product builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive3 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of products</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Membership module products</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Digital products</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Instasuite checkpoint</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Multiple price point</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Coupons & discounts</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Automation actions</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Email
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Redirect URL
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Upload File
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-ISPDN
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Export orders to csv</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive4 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass4}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass4}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Membership Builder
+                        <abbr title="This is membership builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive4 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of members</td>
+                      <td>5000</td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Member tags</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Drip-feed</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Member progress tracking</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Quiz tracking</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Design editor</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive5 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass5}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass5}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        List Builder
+                        <abbr title="This is list builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive5 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">SMTP setup</td>
+                      <td>own</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Blacklist domain, email, IP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Block role-based email</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of lists</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of subscribers</td>
+                      <td>5,000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Manual/Bulk import</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">List segmentation</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Automations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Optin forms</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Broadcasts</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Sequences</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Save email templates</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive6 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass6}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass6}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Blog Builder
+                        <abbr title="This is blog builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive6 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Widgets</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Menu</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Theme customizations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of posts</td>
+                      <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Post catagories</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive7 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass7}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass7}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Affiliate Center
+                        <abbr title="This is affiliate center">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive7 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Promotion tools</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Manage Commissions</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of affiliates</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Theme customization</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive8 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass8}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass8}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Support Desk
+                        <abbr title="This is support desk">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive8 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of staff</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of canned responses</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Knowledgebase</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <a
                 href="javascript:void(0)"
                 class="
@@ -1173,6 +2274,775 @@ const Package = () => {
               >
                 billed yearly
               </p>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        General
+                        <abbr title="This is general option">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Number of sites</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Media manager</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">3rd party integrations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Team members</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Powered by logo</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive2 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass2}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass2}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Funnel Builder
+                        <abbr title="This is funnel builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive2 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of funnels</td>
+                      <td>500</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of templatesgroups</td>
+                      <td>99999</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Split testing</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Mobile optimizer</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">In-built conversion tools</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Html download</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Save as template</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Clone page</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Unique visitors</td>
+                      <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Transfer funnels</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-error"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive3 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass3}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass3}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Product Builder
+                        <abbr title="This is product builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive3 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of products</td>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Membership module products</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Digital products</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Instasuite checkpoint</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Multiple price point</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Coupons & discounts</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Automation actions</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Email
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Redirect URL
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-Upload File
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">
+                        Digital product delivery-ISPDN
+                      </td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Export orders to csv</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive4 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass4}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass4}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Membership Builder
+                        <abbr title="This is membership builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive4 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of members</td>
+                      <td>100,000</td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Member tags</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Drip-feed</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Member progress tracking</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Quiz tracking</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Design editor</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive5 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass5}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass5}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        List Builder
+                        <abbr title="This is list builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive5 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">SMTP setup</td>
+                      <td>own</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Blacklist domain, email, IP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Block role-based email</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of lists</td>
+                      <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of subscribers</td>
+                      <td>100,000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Manual/Bulk import</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">List segmentation</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Automations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="text-xs">Optin forms</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Broadcasts</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Sequences</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Save email templates</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive6 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass6}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass6}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Blog Builder
+                        <abbr title="This is blog builder">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive6 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Widgets</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Menu</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Theme customizations</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of posts</td>
+                      <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Post catagories</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive7 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass7}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass7}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Affiliate Center
+                        <abbr title="This is affiliate center">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive7 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Promotion tools</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Manage Commissions</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of affiliates</td>
+                      <td>5000</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Theme customization</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="overflow-x-auto mb-1">
+                <table class="table w-full">
+                  <thead className="opacity-75">
+                    <tr>
+                      <th>
+                        {!isActive8 ? (
+                          <FontAwesomeIcon
+                            onClick={toggleClass8}
+                            className="mr-2"
+                            icon={faAngleDown}
+                          ></FontAwesomeIcon>
+                        ) : (
+                          <FontAwesomeIcon
+                            onClick={toggleClass8}
+                            className="mr-2"
+                            icon={faAngleUp}
+                          ></FontAwesomeIcon>
+                        )}
+                        Support Desk
+                        <abbr title="This is support desk">
+                          <FontAwesomeIcon
+                            className="ml-2 text-green-400 text-sm"
+                            icon={faCircleQuestion}
+                          ></FontAwesomeIcon>
+                        </abbr>
+                      </th>
+                      <th>Yes</th>
+                    </tr>
+                  </thead>
+                  <tbody className={isActive8 ? "" : "hidden"}>
+                    <tr>
+                      <td className="text-xs">Of staff</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">In-built SMTP</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of canned responses</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Knowledgebase</td>
+                      <td>
+                        <FontAwesomeIcon
+                          className="text-success"
+                          icon={faCheck}
+                        ></FontAwesomeIcon>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-xs">Of themes</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <a
                 href="javascript:void(0)"
